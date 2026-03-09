@@ -1,34 +1,38 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - RuAI",
-  description: "RuAI Privacy Policy. Learn how we collect, use, and protect your personal information.",
+  title: "Política de Privacidad - RuAI",
+  description: "Política de Privacidad de RuAI. Conoce cómo recopilamos, usamos y protegemos tu información personal.",
 };
 
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border bg-white">
+      <header className="border-b border-border bg-surface">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <span className="text-base font-bold text-white">R</span>
-            </div>
-            <span className="text-lg font-bold text-dark">RuAI</span>
+            <Image
+              src="/images/logo-color.png"
+              alt="RuAI"
+              width={100}
+              height={30}
+              className="h-7 w-auto"
+            />
           </Link>
           <Link
             href="/"
-            className="text-sm font-medium text-text-secondary hover:text-dark"
+            className="text-sm font-medium text-text-secondary hover:text-white"
           >
-            &larr; Back to Home
+            &larr; Volver al Inicio
           </Link>
         </div>
       </header>
 
       <main className="mx-auto max-w-4xl px-6 py-16">
-        <h1 className="mb-2 text-4xl font-extrabold text-dark">
+        <h1 className="mb-2 text-4xl font-extrabold text-white">
           Privacy Policy
         </h1>
         <p className="mb-12 text-text-secondary">
@@ -37,7 +41,7 @@ export default function PrivacyPolicy() {
 
         <div className="prose max-w-none space-y-8 text-text-secondary">
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">1. Introduction</h2>
+            <h2 className="mb-4 text-xl font-bold text-white">1. Introduction</h2>
             <p className="leading-relaxed">
               RuAI LLC (&quot;RuAI,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates the RuAI mobile
               application (the &quot;Service&quot;). This Privacy Policy informs you of our
@@ -47,7 +51,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               2. Information We Collect
             </h2>
             <p className="mb-4 leading-relaxed">
@@ -55,30 +59,30 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                <strong className="text-dark">Account Information:</strong> When you
+                <strong className="text-white">Account Information:</strong> When you
                 create an account, we collect your name, email address, and
                 authentication credentials.
               </li>
               <li>
-                <strong className="text-dark">Financial Data:</strong> Financial goals,
+                <strong className="text-white">Financial Data:</strong> Financial goals,
                 budget information, income details, and transaction data that you
                 voluntarily enter into the app. This data is stored securely and
                 never shared with third parties.
               </li>
               <li>
-                <strong className="text-dark">Usage Data:</strong> We collect
+                <strong className="text-white">Usage Data:</strong> We collect
                 information about how you interact with the app, including features
                 used, session duration, and in-app actions to improve our Service.
               </li>
               <li>
-                <strong className="text-dark">Device Information:</strong> Device type,
+                <strong className="text-white">Device Information:</strong> Device type,
                 operating system version, and unique device identifiers.
               </li>
             </ul>
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               3. How We Use Your Information
             </h2>
             <ul className="list-disc space-y-2 pl-6">
@@ -94,7 +98,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               4. Data Storage and Security
             </h2>
             <p className="leading-relaxed">
@@ -107,7 +111,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               5. Third-Party Services
             </h2>
             <p className="mb-4 leading-relaxed">
@@ -115,26 +119,26 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                <strong className="text-dark">Supabase:</strong> Authentication and
+                <strong className="text-white">Supabase:</strong> Authentication and
                 database hosting
               </li>
               <li>
-                <strong className="text-dark">RevenueCat:</strong> Subscription
+                <strong className="text-white">RevenueCat:</strong> Subscription
                 management and payment processing
               </li>
               <li>
-                <strong className="text-dark">Anthropic (Claude AI):</strong> AI-powered
+                <strong className="text-white">Anthropic (Claude AI):</strong> AI-powered
                 financial coaching and recommendations
               </li>
               <li>
-                <strong className="text-dark">Google Sign-In:</strong> Optional
+                <strong className="text-white">Google Sign-In:</strong> Optional
                 authentication provider
               </li>
             </ul>
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               6. AI-Generated Content
             </h2>
             <p className="leading-relaxed">
@@ -148,7 +152,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">7. Your Rights</h2>
+            <h2 className="mb-4 text-xl font-bold text-white">7. Your Rights</h2>
             <p className="mb-4 leading-relaxed">You have the right to:</p>
             <ul className="list-disc space-y-2 pl-6">
               <li>Access your personal data</li>
@@ -160,7 +164,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               8. Children&apos;s Privacy
             </h2>
             <p className="leading-relaxed">
@@ -172,7 +176,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               9. Changes to This Policy
             </h2>
             <p className="leading-relaxed">
@@ -183,15 +187,15 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">10. Contact Us</h2>
+            <h2 className="mb-4 text-xl font-bold text-white">10. Contact Us</h2>
             <p className="leading-relaxed">
               If you have any questions about this Privacy Policy, please contact us
               at{" "}
               <a
-                href="mailto:support@ruai.app"
+                href="mailto:support@ruai.io"
                 className="font-medium text-primary hover:text-primary-dark"
               >
-                support@ruai.app
+                support@ruai.io
               </a>
               .
             </p>

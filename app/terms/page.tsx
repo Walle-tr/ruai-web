@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Terms of Service - RuAI",
@@ -10,25 +11,28 @@ export default function TermsOfService() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border bg-white">
+      <header className="border-b border-border bg-surface">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <span className="text-base font-bold text-white">R</span>
-            </div>
-            <span className="text-lg font-bold text-dark">RuAI</span>
+            <Image
+              src="/images/logo-color.png"
+              alt="RuAI"
+              width={100}
+              height={30}
+              className="h-7 w-auto"
+            />
           </Link>
           <Link
             href="/"
-            className="text-sm font-medium text-text-secondary hover:text-dark"
+            className="text-sm font-medium text-text-secondary hover:text-white"
           >
-            &larr; Back to Home
+            &larr; Volver al Inicio
           </Link>
         </div>
       </header>
 
       <main className="mx-auto max-w-4xl px-6 py-16">
-        <h1 className="mb-2 text-4xl font-extrabold text-dark">
+        <h1 className="mb-2 text-4xl font-extrabold text-white">
           Terms of Service
         </h1>
         <p className="mb-12 text-text-secondary">
@@ -37,7 +41,7 @@ export default function TermsOfService() {
 
         <div className="prose max-w-none space-y-8 text-text-secondary">
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               1. Acceptance of Terms
             </h2>
             <p className="leading-relaxed">
@@ -50,7 +54,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               2. Description of Service
             </h2>
             <p className="leading-relaxed">
@@ -62,7 +66,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               3. User Accounts
             </h2>
             <ul className="list-disc space-y-2 pl-6">
@@ -84,7 +88,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               4. Subscriptions and Payments
             </h2>
             <p className="mb-4 leading-relaxed">
@@ -105,7 +109,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               5. AI-Generated Content Disclaimer
             </h2>
             <p className="leading-relaxed">
@@ -119,7 +123,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               6. User Data and Content
             </h2>
             <p className="leading-relaxed">
@@ -132,7 +136,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               7. Prohibited Conduct
             </h2>
             <p className="mb-4 leading-relaxed">You agree not to:</p>
@@ -155,7 +159,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               8. Limitation of Liability
             </h2>
             <p className="leading-relaxed">
@@ -168,7 +172,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               9. Modifications to Terms
             </h2>
             <p className="leading-relaxed">
@@ -180,7 +184,7 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               10. Termination
             </h2>
             <p className="leading-relaxed">
@@ -189,17 +193,17 @@ export default function TermsOfService() {
               immediately cease. You may cancel your account at any time by
               contacting us at{" "}
               <a
-                href="mailto:support@ruai.app"
+                href="mailto:support@ruai.io"
                 className="font-medium text-primary hover:text-primary-dark"
               >
-                support@ruai.app
+                support@ruai.io
               </a>
               .
             </p>
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">
+            <h2 className="mb-4 text-xl font-bold text-white">
               11. Governing Law
             </h2>
             <p className="leading-relaxed">
@@ -210,14 +214,14 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="mb-4 text-xl font-bold text-dark">12. Contact Us</h2>
+            <h2 className="mb-4 text-xl font-bold text-white">12. Contact Us</h2>
             <p className="leading-relaxed">
               If you have any questions about these Terms, please contact us at{" "}
               <a
-                href="mailto:support@ruai.app"
+                href="mailto:support@ruai.io"
                 className="font-medium text-primary hover:text-primary-dark"
               >
-                support@ruai.app
+                support@ruai.io
               </a>
               .
             </p>

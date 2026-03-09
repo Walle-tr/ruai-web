@@ -1,37 +1,41 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-white py-12">
+    <footer className="border-t border-border bg-surface py-12">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <span className="text-base font-bold text-white">R</span>
-            </div>
-            <span className="text-lg font-bold text-dark">RuAI</span>
-          </div>
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/images/logo-white.png"
+              alt="RuAI"
+              width={120}
+              height={36}
+              className="h-8 w-auto"
+            />
+          </Link>
 
           {/* Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
             <Link
               href="/privacy"
-              className="text-text-secondary transition-colors hover:text-dark"
+              className="text-text-secondary transition-colors hover:text-white"
             >
               Privacy Policy
             </Link>
             <Link
               href="/terms"
-              className="text-text-secondary transition-colors hover:text-dark"
+              className="text-text-secondary transition-colors hover:text-white"
             >
               Terms of Service
             </Link>
             <Link
               href="/support"
-              className="text-text-secondary transition-colors hover:text-dark"
+              className="text-text-secondary transition-colors hover:text-white"
             >
               Support
             </Link>
@@ -40,10 +44,10 @@ export default function Footer() {
           {/* Contact */}
           <div className="text-sm text-text-secondary">
             <a
-              href="mailto:support@ruai.app"
+              href="mailto:support@ruai.io"
               className="transition-colors hover:text-primary"
             >
-              support@ruai.app
+              support@ruai.io
             </a>
           </div>
         </div>

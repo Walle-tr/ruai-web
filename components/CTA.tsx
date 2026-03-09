@@ -2,7 +2,7 @@ export default function CTA() {
   return (
     <section
       id="download"
-      className="relative overflow-hidden bg-dark py-20 md:py-28"
+      className="relative overflow-hidden bg-background py-20 md:py-28"
     >
       {/* Background glow */}
       <div className="pointer-events-none absolute inset-0">
@@ -10,23 +10,31 @@ export default function CTA() {
       </div>
 
       <div className="relative mx-auto max-w-3xl px-6 text-center">
+        {/* Eyebrow */}
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5">
+          <span className="text-sm font-medium text-primary">
+            Ru is waiting. So is your goal.
+          </span>
+        </div>
+
         <h2 className="mb-6 text-3xl font-extrabold tracking-tight text-white md:text-5xl">
-          Take Control of Your{" "}
-          <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-            Financial Future
+          30 seconds a day.{" "}
+          <span className="bg-gradient-to-r from-primary to-[#00D4AA] bg-clip-text text-transparent">
+            One goal achieved.
           </span>
         </h2>
 
-        <p className="mx-auto mb-10 max-w-xl text-lg text-gray-400">
-          Join thousands of smart savers using AI to reach their financial
-          goals faster. Start your free trial today.
+        <p className="mx-auto mb-10 max-w-xl text-lg text-text-secondary">
+          You don&#39;t need to know about finance. You don&#39;t need a perfect budget.
+          Just download RuAI, tell Ru your goal, and report your day —
+          Ru does the rest.
         </p>
 
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           {/* App Store badge */}
           <a
             href="#"
-            className="inline-flex items-center gap-3 rounded-xl bg-white px-6 py-3.5 text-dark transition-all hover:bg-gray-100"
+            className="inline-flex items-center gap-3 rounded-xl bg-white px-6 py-3.5 text-[#0a0a0a] transition-all hover:bg-gray-200"
           >
             <svg
               className="h-7 w-7"
@@ -37,7 +45,7 @@ export default function CTA() {
             </svg>
             <div className="text-left">
               <div className="text-[10px] font-medium uppercase leading-tight opacity-60">
-                Coming Soon on the
+                Coming soon on the
               </div>
               <div className="text-lg font-semibold leading-tight">
                 App Store
@@ -46,8 +54,8 @@ export default function CTA() {
           </a>
         </div>
 
-        <p className="mt-6 text-sm text-gray-500">
-          Free trial included with all plans. No credit card required.
+        <p className="mt-6 text-sm text-text-secondary">
+          Free trial included. No credit card required.
         </p>
       </div>
     </section>

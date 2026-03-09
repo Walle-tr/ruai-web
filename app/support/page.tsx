@@ -1,42 +1,46 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Support - RuAI",
-  description: "Get help with RuAI. Contact our support team for assistance with your account, billing, or technical issues.",
+  title: "Soporte - RuAI",
+  description: "Obtén ayuda con RuAI. Contacta a nuestro equipo de soporte para asistencia con tu cuenta, facturación o problemas técnicos.",
 };
 
 export default function Support() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border bg-white">
+      <header className="border-b border-border bg-surface">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <span className="text-base font-bold text-white">R</span>
-            </div>
-            <span className="text-lg font-bold text-dark">RuAI</span>
+            <Image
+              src="/images/logo-color.png"
+              alt="RuAI"
+              width={100}
+              height={30}
+              className="h-7 w-auto"
+            />
           </Link>
           <Link
             href="/"
-            className="text-sm font-medium text-text-secondary hover:text-dark"
+            className="text-sm font-medium text-text-secondary hover:text-white"
           >
-            &larr; Back to Home
+            &larr; Volver al Inicio
           </Link>
         </div>
       </header>
 
       <main className="mx-auto max-w-4xl px-6 py-16">
-        <h1 className="mb-4 text-4xl font-extrabold text-dark">Support</h1>
+        <h1 className="mb-4 text-4xl font-extrabold text-white">Soporte</h1>
         <p className="mb-12 text-lg text-text-secondary">
-          We&apos;re here to help. Choose the best way to get in touch with us.
+          Estamos aquí para ayudarte. Elige la mejor forma de contactarnos.
         </p>
 
         <div className="grid gap-6 md:grid-cols-2">
           {/* Email Support */}
-          <div className="rounded-2xl border border-border bg-white p-8">
-            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light/60">
+          <div className="rounded-2xl border border-border bg-surface p-8">
+            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
               <svg
                 className="h-7 w-7 text-primary"
                 fill="none"
@@ -51,15 +55,15 @@ export default function Support() {
                 />
               </svg>
             </div>
-            <h3 className="mb-2 text-lg font-bold text-dark">Email Support</h3>
+            <h3 className="mb-2 text-lg font-bold text-white">Soporte por Email</h3>
             <p className="mb-4 text-text-secondary">
-              Send us an email and we&apos;ll get back to you within 24 hours.
+              Envíanos un correo y te responderemos en menos de 24 horas.
             </p>
             <a
-              href="mailto:support@ruai.app"
+              href="mailto:support@ruai.io"
               className="inline-flex items-center gap-2 font-semibold text-primary hover:text-primary-dark"
             >
-              support@ruai.app
+              support@ruai.io
               <svg
                 className="h-4 w-4"
                 fill="none"
@@ -77,8 +81,8 @@ export default function Support() {
           </div>
 
           {/* FAQ */}
-          <div className="rounded-2xl border border-border bg-white p-8">
-            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light/60">
+          <div className="rounded-2xl border border-border bg-surface p-8">
+            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
               <svg
                 className="h-7 w-7 text-primary"
                 fill="none"
@@ -93,82 +97,85 @@ export default function Support() {
                 />
               </svg>
             </div>
-            <h3 className="mb-2 text-lg font-bold text-dark">
-              Frequently Asked Questions
+            <h3 className="mb-2 text-lg font-bold text-white">
+              Preguntas Frecuentes
             </h3>
             <p className="text-text-secondary">
-              Find answers to common questions below.
+              Encuentra respuestas a las preguntas más comunes a continuación.
             </p>
           </div>
         </div>
 
         {/* FAQ Section */}
         <div className="mt-16">
-          <h2 className="mb-8 text-2xl font-bold text-dark">FAQ</h2>
+          <h2 className="mb-8 text-2xl font-bold text-white">Preguntas Frecuentes</h2>
 
           <div className="space-y-6">
-            <div className="rounded-xl border border-border bg-white p-6">
-              <h3 className="mb-2 font-bold text-dark">
-                How do I cancel my subscription?
+            <div className="rounded-xl border border-border bg-surface p-6">
+              <h3 className="mb-2 font-bold text-white">
+                ¿Cómo cancelo mi suscripción?
               </h3>
               <p className="text-text-secondary">
-                You can cancel your subscription anytime through your App Store
-                account settings. Go to Settings &gt; Apple ID &gt; Subscriptions
-                &gt; RuAI and tap &quot;Cancel Subscription.&quot; Your access will
-                continue until the end of the current billing period.
+                Puedes cancelar tu suscripción en cualquier momento desde los ajustes
+                de tu cuenta en la App Store. Ve a Configuración &gt; Apple ID &gt;
+                Suscripciones &gt; RuAI y toca &quot;Cancelar Suscripción.&quot; Tu acceso
+                continuará hasta el final del período de facturación actual.
               </p>
             </div>
 
-            <div className="rounded-xl border border-border bg-white p-6">
-              <h3 className="mb-2 font-bold text-dark">
-                Is my financial data secure?
+            <div className="rounded-xl border border-border bg-surface p-6">
+              <h3 className="mb-2 font-bold text-white">
+                ¿Mis datos financieros están seguros?
               </h3>
               <p className="text-text-secondary">
-                Yes. Your data is encrypted in transit and at rest using
-                enterprise-grade security provided by Supabase. We implement Row
-                Level Security policies to ensure your data is isolated and only
-                accessible by you. We never sell your personal financial data.
+                Sí. Tus datos están encriptados en tránsito y en reposo usando
+                seguridad de nivel empresarial proporcionada por Supabase.
+                Implementamos políticas de Row Level Security para asegurar que tus
+                datos estén aislados y solo sean accesibles por ti. Nunca vendemos
+                tus datos financieros personales.
               </p>
             </div>
 
-            <div className="rounded-xl border border-border bg-white p-6">
-              <h3 className="mb-2 font-bold text-dark">
-                Can I trust the AI financial advice?
+            <div className="rounded-xl border border-border bg-surface p-6">
+              <h3 className="mb-2 font-bold text-white">
+                ¿Puedo confiar en los consejos financieros de la IA?
               </h3>
               <p className="text-text-secondary">
-                RuAI&apos;s AI coach provides personalized recommendations based on
-                your actual financial data. However, this should be used as a
-                guidance tool and not a replacement for professional financial
-                advice. Always consult with a qualified financial advisor for major
-                financial decisions.
+                El coach de IA de RuAI proporciona recomendaciones personalizadas
+                basadas en tus datos financieros reales. Sin embargo, esto debe usarse
+                como una herramienta de orientación y no como un reemplazo del consejo
+                financiero profesional. Siempre consulta con un asesor financiero
+                calificado para decisiones financieras importantes.
               </p>
             </div>
 
-            <div className="rounded-xl border border-border bg-white p-6">
-              <h3 className="mb-2 font-bold text-dark">
-                How do I delete my account?
+            <div className="rounded-xl border border-border bg-surface p-6">
+              <h3 className="mb-2 font-bold text-white">
+                ¿Cómo elimino mi cuenta?
               </h3>
               <p className="text-text-secondary">
-                To delete your account and all associated data, please email us at{" "}
+                Para eliminar tu cuenta y todos los datos asociados, envíanos un
+                correo a{" "}
                 <a
-                  href="mailto:support@ruai.app"
+                  href="mailto:support@ruai.io"
                   className="font-medium text-primary hover:text-primary-dark"
                 >
-                  support@ruai.app
+                  support@ruai.io
                 </a>{" "}
-                with the subject line &quot;Account Deletion Request.&quot; We will process
-                your request within 30 days.
+                con el asunto &quot;Solicitud de Eliminación de Cuenta.&quot; Procesaremos
+                tu solicitud en un máximo de 30 días.
               </p>
             </div>
 
-            <div className="rounded-xl border border-border bg-white p-6">
-              <h3 className="mb-2 font-bold text-dark">
-                What happens during the free trial?
+            <div className="rounded-xl border border-border bg-surface p-6">
+              <h3 className="mb-2 font-bold text-white">
+                ¿Qué pasa durante la prueba gratuita?
               </h3>
               <p className="text-text-secondary">
-                During your free trial, you have full access to all RuAI features.
-                You won&apos;t be charged until the trial period ends. You can cancel
-                at any time before the trial ends to avoid being charged.
+                Durante tu prueba gratuita, tienes acceso completo a todas las
+                funciones de RuAI. No se te cobrará hasta que termine el período de
+                prueba. Puedes cancelar en cualquier momento antes de que termine la
+                prueba para evitar cargos.
               </p>
             </div>
           </div>

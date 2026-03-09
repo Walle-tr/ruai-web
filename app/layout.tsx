@@ -9,38 +9,38 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "RuAI - Smart Budget & Goals | AI-Powered Personal Finance",
+  title: "RuAI - Your AI Financial Coach | Smart Goals & Budgeting",
   description:
     "Take control of your finances with RuAI. Set any financial goal and let AI build your personalized plan with smart budgeting, goal tracking, and daily action steps.",
   keywords: [
     "budget",
-    "budgeting",
-    "finance",
-    "money",
+    "personal finance",
     "savings",
-    "goals",
+    "financial goals",
     "AI",
-    "coach",
-    "tracker",
-    "expense",
+    "financial coach",
+    "expenses",
+    "money management",
+    "goal tracking",
+    "smart budgeting",
   ],
   authors: [{ name: "RuAI LLC" }],
   openGraph: {
-    title: "RuAI - Smart Budget & Goals",
+    title: "RuAI - Your AI Financial Coach",
     description:
-      "Your AI-Powered Financial Roadmap. Set any financial goal and let AI build your personalized plan.",
-    url: "https://ruai.app",
+      "Your AI-powered financial roadmap. Set any goal and let AI build your personalized plan.",
+    url: "https://ruai.io",
     siteName: "RuAI",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "RuAI - Smart Budget & Goals",
+    title: "RuAI - Your AI Financial Coach",
     description:
-      "Your AI-Powered Financial Roadmap. Set any financial goal and let AI build your personalized plan.",
+      "Your AI-powered financial roadmap. Set any goal and let AI build your personalized plan.",
   },
-  metadataBase: new URL("https://ruai.app"),
+  metadataBase: new URL("https://ruai.io"),
 };
 
 export default function RootLayout({
@@ -50,6 +50,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
