@@ -24,7 +24,7 @@ export default function Header() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center">
-          <Image src="/images/logo-color.png" alt="RuAI" width={120} height={40} className="h-8 w-auto" />
+          <Image src="/images/logo-color.png" alt="RuAI" width={180} height={56} className="h-11 w-auto" />
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
