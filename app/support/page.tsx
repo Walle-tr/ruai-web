@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Soporte - RuAI",
-  description: "Obtén ayuda con RuAI. Contacta a nuestro equipo de soporte para asistencia con tu cuenta, facturación o problemas técnicos.",
+  title: "Support - RuAI",
+  description: "Get help with RuAI. Contact our support team for assistance with your account, billing, or technical issues.",
 };
 
 export default function Support() {
@@ -26,15 +26,15 @@ export default function Support() {
             href="/"
             className="text-sm font-medium text-text-secondary hover:text-white"
           >
-            &larr; Volver al Inicio
+            &larr; Back to Home
           </Link>
         </div>
       </header>
 
       <main className="mx-auto max-w-4xl px-6 py-16">
-        <h1 className="mb-4 text-4xl font-extrabold text-white">Soporte</h1>
+        <h1 className="mb-4 text-4xl font-extrabold text-white">Support</h1>
         <p className="mb-12 text-lg text-text-secondary">
-          Estamos aquí para ayudarte. Elige la mejor forma de contactarnos.
+          We&apos;re here to help. Choose the best way to reach us.
         </p>
 
         <div className="grid gap-6 md:grid-cols-2">
@@ -55,9 +55,9 @@ export default function Support() {
                 />
               </svg>
             </div>
-            <h3 className="mb-2 text-lg font-bold text-white">Soporte por Email</h3>
+            <h3 className="mb-2 text-lg font-bold text-white">Email Support</h3>
             <p className="mb-4 text-text-secondary">
-              Envíanos un correo y te responderemos en menos de 24 horas.
+              Send us an email and we&apos;ll get back to you within 24 hours.
             </p>
             <a
               href="mailto:support@ruai.io"
@@ -98,84 +98,81 @@ export default function Support() {
               </svg>
             </div>
             <h3 className="mb-2 text-lg font-bold text-white">
-              Preguntas Frecuentes
+              Frequently Asked Questions
             </h3>
             <p className="text-text-secondary">
-              Encuentra respuestas a las preguntas más comunes a continuación.
+              Find answers to common questions below.
             </p>
           </div>
         </div>
 
         {/* FAQ Section */}
         <div className="mt-16">
-          <h2 className="mb-8 text-2xl font-bold text-white">Preguntas Frecuentes</h2>
+          <h2 className="mb-8 text-2xl font-bold text-white">Frequently Asked Questions</h2>
 
           <div className="space-y-6">
             <div className="rounded-xl border border-border bg-surface p-6">
               <h3 className="mb-2 font-bold text-white">
-                ¿Cómo cancelo mi suscripción?
+                How do I cancel my subscription?
               </h3>
               <p className="text-text-secondary">
-                Puedes cancelar tu suscripción en cualquier momento desde los ajustes
-                de tu cuenta en la App Store. Ve a Configuración &gt; Apple ID &gt;
-                Suscripciones &gt; RuAI y toca &quot;Cancelar Suscripción.&quot; Tu acceso
-                continuará hasta el final del período de facturación actual.
+                You can cancel your subscription anytime from your App Store settings.
+                Go to Settings &gt; Apple ID &gt; Subscriptions &gt; RuAI and tap
+                &quot;Cancel Subscription.&quot; Your access will continue until the end of
+                your current billing period.
               </p>
             </div>
 
             <div className="rounded-xl border border-border bg-surface p-6">
               <h3 className="mb-2 font-bold text-white">
-                ¿Mis datos financieros están seguros?
+                Is my financial data secure?
               </h3>
               <p className="text-text-secondary">
-                Sí. Tus datos están encriptados en tránsito y en reposo usando
-                seguridad de nivel empresarial proporcionada por Supabase.
-                Implementamos políticas de Row Level Security para asegurar que tus
-                datos estén aislados y solo sean accesibles por ti. Nunca vendemos
-                tus datos financieros personales.
+                Yes. Your data is encrypted in transit and at rest using enterprise-grade
+                security provided by Supabase. We use Row Level Security policies to ensure
+                your data is isolated and only accessible by you. We never sell your
+                personal financial data.
               </p>
             </div>
 
             <div className="rounded-xl border border-border bg-surface p-6">
               <h3 className="mb-2 font-bold text-white">
-                ¿Puedo confiar en los consejos financieros de la IA?
+                What does Ru actually do?
               </h3>
               <p className="text-text-secondary">
-                El coach de IA de RuAI proporciona recomendaciones personalizadas
-                basadas en tus datos financieros reales. Sin embargo, esto debe usarse
-                como una herramienta de orientación y no como un reemplazo del consejo
-                financiero profesional. Siempre consulta con un asesor financiero
-                calificado para decisiones financieras importantes.
+                Ru is your personal financial agent. After each daily check-in, Ru tells
+                you whether you got closer to or further from your goal — and how your
+                streak is going. Ru doesn&apos;t give investment advice or manage your money.
+                It simply reflects on your daily numbers so you stay aware and on track.
               </p>
             </div>
 
             <div className="rounded-xl border border-border bg-surface p-6">
               <h3 className="mb-2 font-bold text-white">
-                ¿Cómo elimino mi cuenta?
+                How do I delete my account?
               </h3>
               <p className="text-text-secondary">
-                Para eliminar tu cuenta y todos los datos asociados, envíanos un
-                correo a{" "}
+                To delete your account and all associated data, send us an email at{" "}
                 <a
                   href="mailto:support@ruai.io"
                   className="font-medium text-primary hover:text-primary-dark"
                 >
                   support@ruai.io
                 </a>{" "}
-                con el asunto &quot;Solicitud de Eliminación de Cuenta.&quot; Procesaremos
-                tu solicitud en un máximo de 30 días.
+                with the subject &quot;Account Deletion Request.&quot; We&apos;ll process
+                your request within 30 days.
               </p>
             </div>
 
             <div className="rounded-xl border border-border bg-surface p-6">
               <h3 className="mb-2 font-bold text-white">
-                ¿Qué pasa durante la prueba gratuita?
+                What happens during the free trial?
               </h3>
               <p className="text-text-secondary">
-                Durante tu prueba gratuita, tienes acceso completo a todas las
-                funciones de RuAI. No se te cobrará hasta que termine el período de
-                prueba. Puedes cancelar en cualquier momento antes de que termine la
-                prueba para evitar cargos.
+                During your free trial, you have full access to all RuAI premium features
+                including multiple goals, full check-in history, and unlimited conversations
+                with Ru. You won&apos;t be charged until the trial period ends. You can cancel
+                anytime before the trial ends to avoid charges.
               </p>
             </div>
           </div>

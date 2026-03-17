@@ -9,26 +9,26 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "RuAI - Your AI Financial Coach | Smart Goals & Budgeting",
+  title: "RuAI — 30 Seconds a Day to Reach Your Financial Goal",
   description:
-    "Take control of your finances with RuAI. Set any financial goal and let AI build your personalized plan with smart budgeting, goal tracking, and daily action steps.",
+    "Report what you earned and spent. Ru tells you if you're on track. A daily 30-second check-in that turns any financial goal into a simple habit — no spreadsheets, no budgets.",
   keywords: [
-    "budget",
-    "personal finance",
-    "savings",
-    "financial goals",
-    "AI",
-    "financial coach",
-    "expenses",
-    "money management",
-    "goal tracking",
-    "smart budgeting",
+    "daily check-in",
+    "financial goal tracker",
+    "savings tracker",
+    "personal finance app",
+    "AI financial agent",
+    "no spend day",
+    "money tracker",
+    "goal progress",
+    "earn vs spend",
+    "habit tracker finance",
   ],
   authors: [{ name: "RuAI LLC" }],
   openGraph: {
-    title: "RuAI - Your AI Financial Coach",
+    title: "RuAI — 30 Seconds a Day to Reach Your Financial Goal",
     description:
-      "Your AI-powered financial roadmap. Set any goal and let AI build your personalized plan.",
+      "Report your day. Ru tells you if you're on track. The simplest way to reach any financial goal.",
     url: "https://ruai.io",
     siteName: "RuAI",
     type: "website",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "RuAI - Your AI Financial Coach",
+    title: "RuAI — 30 Seconds a Day to Reach Your Financial Goal",
     description:
-      "Your AI-powered financial roadmap. Set any goal and let AI build your personalized plan.",
+      "Report your day. Ru tells you if you're on track. The simplest way to reach any financial goal.",
   },
   metadataBase: new URL("https://ruai.io"),
 };
