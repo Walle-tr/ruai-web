@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidad - RuAI",
-  description: "Política de Privacidad de RuAI. Conoce cómo recopilamos, usamos y protegemos tu información personal.",
+  title: "Privacy Policy - RuAI",
+  description: "RuAI Privacy Policy. Learn how we collect, use, and protect your personal information.",
 };
 
 export default function PrivacyPolicy() {
@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
             href="/"
             className="text-sm font-medium text-text-secondary hover:text-white"
           >
-            &larr; Volver al Inicio
+            &larr; Back to Home
           </Link>
         </div>
       </header>
